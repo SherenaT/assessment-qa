@@ -53,6 +53,22 @@
     </table>
 
     <script>
+      let btn = document.querySelector("#start-game");
+      let gameBd = document.querySelector("#game-board");
+
+      const changeBkGnd = function (event) {
+        btn.style.backgroundColor = "#feeafa";
+        gameBd.style.border = "solid 3px fuchsia";
+      };
+
+      //   #game-board td {
+      //     border: solid 1px black;
+      //     height: 80px;
+      //     width: 80px;
+      //     text-align: center;
+      //     font-size: 45px;
+      //   }
+
       /* Tic-Tac Javascript */
 
       // The board is a simple 9-element array of null-for-empty, "X", or "O"
