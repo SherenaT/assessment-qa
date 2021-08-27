@@ -56,10 +56,16 @@
       let btn = document.querySelector("#start-game");
       let gameBd = document.querySelector("#game-board");
 
-      const changeBkGnd = function (event) {
+      const changeCSS = function (event) {
         btn.style.backgroundColor = "#feeafa";
         gameBd.style.border = "solid 3px fuchsia";
       };
+
+      function cssE(event) {
+        btn.addEventListener("click", changeCSS);
+      }
+
+      cssE();
 
       //   #game-board td {
       //     border: solid 1px black;
