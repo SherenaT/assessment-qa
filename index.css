@@ -1,0 +1,17 @@
+body {
+  font-family: sans-serif;
+  background-color: brown;
+}
+
+#game-board {
+  border: solid 1px black;
+  margin-bottom: 2em;
+}
+
+#game-board td {
+  border: solid 1px black;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  font-size: 45px;
+}
