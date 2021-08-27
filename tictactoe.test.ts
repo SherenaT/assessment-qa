@@ -18,22 +18,31 @@ test("I can start a game", async () => {
 });
 describe("Testing out clicks", () => {
   test("I can click on the top left corner", async () => {
-    await (await driver).findElement(By.id("cell-0")).click();
+    expect(await (await driver).findElement(By.id("cell-0")).click()).toEqual(
+      "X"
+    );
     await (await driver).sleep(3000);
   });
 
   test("Clicking over an 'O'", async () => {
-    await (await driver).findElement(By.id("cell-1")).click();
+    expect(await (await driver).findElement(By.id("cell-1")).click()).toEqual(
+      "X"
+    );
+
     await (await driver).sleep(3000);
   });
 
   test("I can click on the middle", async () => {
-    await (await driver).findElement(By.id("cell-4")).click();
+    expect(await (await driver).findElement(By.id("cell-4")).click()).toEqual(
+      "X"
+    );
     await (await driver).sleep(3000);
   });
 
   test("I can click on the bottom right corner", async () => {
-    await (await driver).findElement(By.id("cell-8")).click();
+    expect(await (await driver).findElement(By.id("cell-8")).click()).toEqual(
+      "X"
+    );
     await (await driver).sleep(3000);
   });
 });
