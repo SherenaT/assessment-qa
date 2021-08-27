@@ -55,10 +55,16 @@
     <script>
       let btn = document.querySelector("#start-game");
       let gameBd = document.querySelector("#game-board");
+      let gameBdTD = document.querySelector("#game-board td");
 
       const changeCSS = function (event) {
-        btn.style.backgroundColor = "#feeafa";
-        gameBd.style.border = "solid 3px fuchsia";
+        btn.style.backgroundColor = "pink";
+        gameBd.style.border = "solid 6px fuchsia";
+        gameBdTD.style.border = "solid 6px fuchsia";
+        gameBdTD.style.height = "180px";
+        gameBdTD.style.width = "180px";
+        gameBdTD.style.textalign = "center";
+        gameBdTD.style.fontsize = "100px";
       };
 
       function cssE(event) {
